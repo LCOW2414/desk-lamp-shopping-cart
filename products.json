@@ -1,0 +1,58 @@
+[
+    {
+        "id": 1,
+        "name": "Modern Desk Lamp",
+        "description": "A sleek and stylish modern desk lamp with adjustable brightness and USB charging port.",
+        "price": 49.99,
+        "image": "img/product1.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Vintage Desk Lamp",
+        "description": "A classic vintage desk lamp with an antique brass finish and adjustable arm.",
+        "price": 59.99,
+        "image": "img/product2.jpg"
+    },
+    {
+        "id": 3,
+        "name": "LED Desk Lamp",
+        "description": "An energy-efficient LED desk lamp with multiple color settings and a dimmable feature.",
+        "price": 39.99,
+        "image": "img/product3.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Adjustable Desk Lamp",
+        "description": "An adjustable desk lamp perfect for focused work with a flexible neck and a built-in pen holder.",
+        "price": 44.99,
+        "image": "img/product4.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Minimalist Desk Lamp",
+        "description": "A minimalist desk lamp with a modern design and touch-sensitive controls.",
+        "price": 54.99,
+        "image": "img/product5.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Smart Desk Lamp",
+        "description": "A smart desk lamp with Wi-Fi connectivity and voice control compatibility.",
+        "price": 79.99,
+        "image": "img/product6.jpg"
+    },
+    {
+        "id": 7,
+        "name": "Industrial Desk Lamp",
+        "description": "An industrial-style desk lamp with a heavy-duty base and exposed bulb design.",
+        "price": 69.99,
+        "image": "img/product7.jpg"
+    },
+    {
+        "id": 8,
+        "name": "Convertible Desk Lamp",
+        "description": "A convertible desk lamp that can be used as a desk lamp or a floor lamp with adjustable height.",
+        "price": 89.99,
+        "image": "img/product8.jpg"
+    }
+]
