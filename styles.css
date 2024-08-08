@@ -29,9 +29,14 @@ body {
     margin: 0 auto;
 }
 
+.logo-img {
+    height: 45px;
+    border-radius: 10px;
+}
+
 /* Header Styles */
 header {
-    background-color: #2c3e50;
+    background-color: #263443;
     color: white;
     padding: 20px 0;
 }
@@ -331,7 +336,7 @@ header .nav-link:hover {
 
 /* Footer Styles */
 footer {
-    background-color: #2c3e50;
+    background-color: #263443;
     color: white;
     text-align: center;
     padding: 10px 0;
