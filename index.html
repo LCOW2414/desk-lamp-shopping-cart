@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ujala Desk Lamp - Home</title>
+    <title>Ujala Desk Lamp</title>
     <link rel="stylesheet" href="styles.css">
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -11,20 +12,33 @@
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <!-- jQuery UI JavaScript -->
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" type="image/jpg" href="img/morden.jpg">
 </head>
+
 <body>
     <header>
         <div class="container">
             <h1>Ujala Desk Lamp</h1>
-            <nav>
-                <a href="#home" class="nav-link" onclick="navigateTo('home')">Home</a>
-                <a href="#products" class="nav-link" onclick="navigateTo('products')">Products</a>
-                <a href="#cart" class="nav-link cart-main" onclick="navigateTo('cart')">Cart<span id="cartItemCount" class="cart-item-count"></span></a>
-            </nav>
-            <select id="countrySelect" class="country-select">
-                <option value="CAD" data-tax="0">Canada</option>
-                <option value="INR" data-tax="0.18">India</option>
-            </select>
+            <div class="menu-container">
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <nav class="nav-menu">
+                    <div class="nav-content">
+                        <button class="close-menu-btn"><i class="fas fa-times"></i></button>
+                        <a href="#home" class="nav-link" onclick="navigateTo('home')">Home</a>
+                        <a href="#products" class="nav-link" onclick="navigateTo('products')">Products</a>
+                        <a href="#cart" class="nav-link cart-main" onclick="navigateTo('cart')">Cart<span
+                                id="cartItemCount" class="cart-item-count"></span></a>
+                        <select id="countrySelect" class="country-select">
+                            <option value="CAD" data-tax="0">Canada</option>
+                            <option value="INR" data-tax="0.18">India</option>
+                        </select>
+                    </div>
+                </nav>
+            </div>
+
         </div>
     </header>
     <main id="main-content">
@@ -38,4 +52,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>

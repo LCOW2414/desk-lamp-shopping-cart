@@ -28,6 +28,32 @@ function updatePrices() {
 
 document.addEventListener("DOMContentLoaded", function () {
 
+    const menuToggle = document.querySelector('.menu-toggle');
+    const closeMenuBtn = document.querySelector('.close-menu-btn');
+    const navMenu = document.querySelector('.nav-menu');
+    const body = document.body;
+
+    menuToggle.addEventListener('click', function() {
+        navMenu.classList.toggle('active');
+    });
+
+    closeMenuBtn.addEventListener('click', function() {
+        navMenu.classList.remove('active');
+    });
+
+    window.addEventListener('resize', function() {
+        if (window.innerWidth > 768) {
+            navMenu.classList.remove('active'); // Ensure menu is visible on larger screens
+        }
+    });
+
+    // Close the menu when clicking outside of it
+    document.addEventListener('click', function(event) {
+        if (!navMenu.contains(event.target) && !menuToggle.contains(event.target)) {
+            navMenu.classList.remove('active');
+        }
+    });
+
     const countrySelect = document.getElementById('countrySelect');
     if (countrySelect) {
         // Set initial value
@@ -96,6 +122,9 @@ function navigateTo(view) {
         default:
             mainContent.innerHTML = '<p>Page not found.</p>';
     }
+
+    const navMenu = document.querySelector('.nav-menu');
+    navMenu.classList.remove('active');
 }
 
 function displayProducts(products) {
@@ -170,7 +199,7 @@ function updateCart() {
             cartItems.html(`
             <div id="emptyCartMessage" class="empty-cart-message">
                 <p>Your cart is empty.</p>
-                <a href="#products" class="shop-now-button" onclick="navigateTo('products')">Go Shopping</a>
+                <a href="#products" class="shop-now-button cta-button" onclick="navigateTo('products')">Go Shopping</a>
             </div>
             `);
 
